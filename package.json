@@ -1,0 +1,19 @@
+{
+  "name": "email-auto-drafter",
+  "version": "1.0.0",
+  "description": "Polls Gmail for new emails from known contacts and auto-generates draft replies using Claude.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "auth": "node auth.js",
+    "send-test": "node send-test.js",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "googleapis": "^144.0.0",
+    "nodemailer": "^8.0.6",
+    "openai": "^4.104.0"
+  }
+}
